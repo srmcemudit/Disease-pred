@@ -4,6 +4,10 @@ import pickle
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
     
+st.set_page_config(page_title="Docs", page_icon="📈")
+st.sidebar.header("Prediction")
+
+    
 age = st.number_input(
     "Enter your age", value=0 , placeholder= "age" , key="age",
 )
